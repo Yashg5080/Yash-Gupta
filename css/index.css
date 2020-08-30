@@ -1,0 +1,193 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Heebo', sans-serif;
+  color: antiquewhite;
+  /* background-blend-mode: darken; */
+  /* background-color: #2e273f; */
+}
+
+.nav-bar {
+  background-color: none
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+.my-name {
+  display: flex;
+  width: 50%;
+}
+
+.nav-elements {
+  padding-top: 10px;
+  margin-left: 23px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+/* .my-name a li{
+  padding-top: 8px;
+} */
+
+.my-name img {
+  height: 39px;
+  width: 41px;
+  filter: brightness(135%);
+  margin-left: 11px;
+  border-radius: 100px;
+}
+
+.my-name img:hover {
+  cursor: pointer;
+  opacity: 0.94;
+  transition: 0.3s;
+}
+
+.other-items {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.other-items li {
+  padding-top: 10px;
+  margin-left: 23px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px
+}
+
+.nav-elements:hover {
+  cursor: pointer;
+  background-color: rgb(0, 255, 213);
+  color: rgba(17, 1, 1, 0.986);
+}
+
+.other-items a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.my-name a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+/* Settings when anyone clicks on image */
+.imgdisp {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 11vh;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#cross {
+  color: antiquewhite;
+  margin-left: 18vw;
+  font-size: 38px;
+}
+
+#cross:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image img {
+  border-radius: 100vh;
+  height: 50vh;
+  width: 50vh;
+}
+
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+
+#content {
+  color: whitesmoke;
+  margin: auto;
+  margin-top: 21vh;
+  max-width: 40vw;
+  font-size: 5vh;
+  font-style: italic;
+}
+
+.hamburger {
+  display: none;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 36px;
+}
+
+.line {
+  /* background-color: white; */
+  border: 1px solid white;
+  margin: 6px;
+  background-color: wheat;
+
+}
+
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Making website responsive */
+@media only screen and (max-width: 570px) {
+
+  body {
+    height: 150vh;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .my-name,
+  .other-items {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trans {
+    transition: all 10s ease-out;
+  }
+
+  .display {
+    display: flex;
+  }
+}

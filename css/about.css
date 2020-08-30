@@ -1,0 +1,100 @@
+.intro {
+    margin-top: 12vh;
+    margin-left: 6vw;
+}
+
+body {
+    color: #b9b3b3;
+}
+
+.intro p {
+    max-width: 452px;
+    margin-top: 10px;
+}
+
+.intro i a {
+    color: #b9b3b3;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.connect h2 {
+    margin-bottom: 10px;
+}
+
+.skills {
+    position: absolute;
+    top: 16vh;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        height: 1000px;
+    }
+
+    .intro {
+        position: absolute;
+        width: 100%;
+        margin-left: 50px;
+
+    }
+
+    .skills {
+        width: 100%;
+        position: absolute;
+        top: 269px;
+        left: 49px;
+    }
+
+    .connect {
+        width: 100%;
+        position: absolute;
+        top: 733px;
+        left: -1px;
+    }
+
+    .response {
+        top: 600px;
+    }
+
+    .response1 {
+        top: 1100px;
+    }
+    .bodyheight{
+        height: 1400px;
+    }
+    .display{
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    .skills {
+        top: 326px;
+    }
+
+    .connect {
+        top: 800px;
+    }
+
+    .response {
+        top: 600px;
+    }
+
+    .response1 {
+        top: 1100px;
+    }
+    .bodyheight{
+        height: 1400px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+}

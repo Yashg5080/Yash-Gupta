@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personel Site</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+</head>
+
+<body>
+    <!-- Designing hamburger -->
+    <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul class="nav-list" id="ul">
+            <div class="my-name">
+                <img src="images/myphoto.jpg" id="myphoto" alt="Yash Gupta">
+                <a href="/">
+                    <li class="nav-elements">Yash Gupta</li>
+                </a>
+            </div>
+            <div class="other-items">
+                <a href="projects.html" title="projects">
+                    <li class="nav-elements"> Projects</li>
+                </a>
+
+                <a href="resume.pdf" target="_blank" title="resume.pdf">
+                    <li class="nav-elements" > Resume</li>
+                </a>
+                <a href="about.html" title="About">
+                    <li class="nav-elements"> About Me</li>
+                </a>
+            </div>
+        </ul>
+    </nav>
+    <!-- Displaying my image when someone clicks on it -->
+    <div class="imgdisp" id='imgdisp'>
+        <div id="cross" style="color: antiquewhite;">&times;</div>
+        <div class="image"><img src="images/myphoto.jpg" alt="photo"></div>
+        <div class="caption">Yash Gupta</div>
+    </div>
+    
+    <section>
+        <div class="parent">
+            <div class="project">
+                <img src="images/project1.png" alt="project1">
+                <div class="content">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>This is a console game designed by me. It purely uses the concepts of basic python programming.It has total three modes in which you can play.Error handling is done for wrong moves and it will be the smooth experience while playing. For details and code you can click the code button below.</p>
+                </div>
+              <a href="https://github.com/Yashg5080/Tic-Tac-Toe-game" target="_blank">Code</a>
+            </div>
+            <div class="project">
+                <img src="images/project2.png" alt="project1">
+                <div class="content">
+                    <h3>Flappy Bird</h3>
+                    <p>This is a console game designed by me. It purely uses the concepts of basic python programming.It has total three modes in which you can play.Error handling is done for wrong moves and it will be the smooth experience while playing. For details and code you can click the code button below.</p>
+                </div>
+              <a href="https://github.com/Yashg5080/Flappy-Bird-Game" target="_blank">Code</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/project.js"></script>
+</body>
+
+</html>
