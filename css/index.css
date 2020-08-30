@@ -175,6 +175,15 @@ body {
     display: block;
   }
 
+  #content{
+    color: whitesmoke;
+    margin: auto;
+    margin-top: 4vh;
+    max-width: 95vw;
+    font-size: 5vh;
+    font-style: italic;
+  }
+
   .my-name,
   .other-items {
     flex-direction: column;
