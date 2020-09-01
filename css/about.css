@@ -1,100 +1,95 @@
-.intro {
-    margin-top: 12vh;
-    margin-left: 6vw;
+section {
+    display: flex;
+    flex-direction: row;
 }
 
-body {
-    color: #b9b3b3;
-}
-
-.intro p {
-    max-width: 452px;
-    margin-top: 10px;
-}
-
-.intro i a {
-    color: #b9b3b3;
-    margin-left: 5px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.connect h2 {
-    margin-bottom: 10px;
+.left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .skills {
-    position: absolute;
-    top: 16vh;
-    right: 0;
-    width: 40%;
-    height: 100%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
 }
 
-@media only screen and (max-width: 850px) {
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    gap: 12px;
+    margin: auto;
+    margin-left: 150px;
+    margin-top: 100px;
+
+}
+
+.intro p {
+    width: 402px;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 50%;
+    width: 100%;
+    margin-left: 300px;
+}
+
+.skills {
+    margin-top: 88px;
+    margin-left: 300px;
+}
+
+.connect i a {
+    text-decoration: none;
+    color: antiquewhite;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.connect i a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 990px) {
     body {
-        height: 1000px;
+        height: 1100px;
+
     }
+
+    section {
+        flex-direction: column;
+    }
+
 
     .intro {
-        position: absolute;
+        margin-top: 40px;
+        margin-left: 20px;
         width: 100%;
-        margin-left: 50px;
-
-    }
-
-    .skills {
-        width: 100%;
-        position: absolute;
-        top: 269px;
-        left: 49px;
     }
 
     .connect {
+        margin-left: 47px;
         width: 100%;
-        position: absolute;
-        top: 733px;
-        left: -1px;
     }
 
-    .response {
-        top: 600px;
-    }
-
-    .response1 {
-        top: 1100px;
-    }
-    .bodyheight{
-        height: 1400px;
-    }
-    .display{
-        display: flex;
-    }
-
-}
-
-@media only screen and (max-width: 440px) {
     .skills {
-        top: 326px;
+        margin-left: 20px;
+        width: 100%;
     }
 
-    .connect {
-        top: 800px;
-    }
-
-    .response {
-        top: 600px;
-    }
-
-    .response1 {
-        top: 1100px;
-    }
-    .bodyheight{
+    .bodyheight {
         height: 1400px;
     }
-
-    .display{
-        display: flex;
-    }
-
 }
