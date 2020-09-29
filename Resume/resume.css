@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #3d3e44;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+h1{
+    border-bottom: 2px solid rgb(190, 186, 186);
+    padding-bottom: 2px;
+    width: 96%;
+    color: darkturquoise;
+}
+h2{
+    color: mediumspringgreen;
+}
+/* Designing lest side of page */
+.left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    background-color: #3d3e44;
+    border-right: 2px solid white;
+    height: 100vh;
+    border-color: yellowgreen;
+}
+.image{
+    height: 35%;
+    width: 100%;
+    border-bottom: 2px solid yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    gap: 15px;
+    font-style: italic;
+    font-size: 30px;
+}
+.image img{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
+.navigation-dom{
+    height: 65%;
+    width: 100%;
+    font-size: 18px;
+}
+.navigation-dom a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.navigation-dom a:hover{
+    background-color: rgb(255, 187, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+/* Designing right side of page */
+.right{
+    margin-left: 18vw;
+    width: 82%;
+    background-color: #3d3e44;
+    height: 100vh;
+}
+.upper{
+    text-align: center;
+}
+.upper img{
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+    border: 5px groove  lavender;
+
+}
+.para{
+    margin-left: 50px;
+    margin-top: 25px;
+    max-width: 91%;
+    font-size: 23px;
+    line-height: 1.7;
+}
+.para>h1{
+    font-size: 35px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+/* Styling education area */
+.education{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 18px;   
+}
+.education ul{
+    text-indent: 15px;
+}
+.education>ul>p{
+    font-size: 23px;
+    line-height: 40px;
+}
+/* Styling skills area */
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 50px;
+    gap: 20px;
+}
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.progress-bar pre{
+    font-size: 23px;
+    margin-left: 40px;
+}
+progress{
+    background: crimson;
+    /* color: blanchedalmond; */
+    width: 30vw;
+}
+  
+  progress::-moz-progress-bar {
+    background: lightcolor;
+  }
+  
+  progress::-webkit-progress-value {
+    background: rgb(94, 255, 0);
+  }
+  
+  progress::-webkit-progress-bar {
+    background: rgba(240, 201, 25, 0.603);
+  }
+
+  /* Styling Certificates */
+.certificates{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.certificates ul{
+    text-indent: 18px;
+}
+.certificates ul>p{
+    font-size: 23px;
+    line-height: 40px;
+}
+
+/*  Styling Projects */
+.projects{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.projects ul>li>p{
+    font-size: 23px;
+    line-height: 40px;
+    max-width: 90%;
+    margin-left: 18px;
+    text-indent: 0;
+
+}
+.projects ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-indent: 18px;
+}
+
+/* Styling connect */
+.connect{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+.connect p{
+    font-size: 23px;
+    line-height: 40px;
+    max-width: 90%;
+    margin-left: 18px;
+    text-indent: 0;
+
+}
+
+
+/* Making Website Responsive */
+@media only screen and (max-width: 790px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        margin-right: 65px;
+        margin-left: 65px;
+    }
+
+    .upper img{
+        display: none;
+    }
+
+    .image img{
+        width: 40%;
+        height: 50%;
+    }
+    .right{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+
+    }
+    
+}
+
+
+
+
