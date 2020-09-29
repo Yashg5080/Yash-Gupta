@@ -16,7 +16,7 @@ cross.onclick=function () {
   imgdisp.style.display='none'
   // navList.classList.remove('blur')
   navList.style.display='flex'
-  section.style.display='block'
+  section.style.display='flex'
 }
 
 // hamburger
